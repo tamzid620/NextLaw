@@ -1,11 +1,15 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cormorant , Open_Sans } from "next/font/google";
 
-export const geistSans = Geist({
-  variable: "--font-geist-sans",
+export const cormorant = Cormorant({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
-export const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const open_sans = Open_Sans({
+  weight: [ "300", "400", "500", "600", "700" ,"800"],
   subsets: ["latin"],
 });
+
+
+
+

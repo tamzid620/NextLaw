@@ -11,12 +11,10 @@ export const metadata = {
 export default function HomeLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className=""
-      >
-        <Navbar/>
+      <body>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
