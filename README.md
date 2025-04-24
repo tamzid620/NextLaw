@@ -2,8 +2,8 @@ Trial Templates: https://justicia.qodeinteractive.com/ , https://dictum.qodeinte
 
 
 logo color code: #385165 ;
-color code -1(cream) : #ECEFCA ;
-color code -2(blue) : #94B4C1 ;
+color code -2(green) : #124547 ;
+color code -2(brown) : #98664A ;
 
 {` ${cormorant.className} ${open_sans.className} `}
 
