@@ -18,11 +18,11 @@ const navli = [
   },
   {
     path: "/",
-    name: "Blog",
+    name: "Our Expertise",
   },
   {
     path: "/",
-    name: "Our Expertise",
+    name: "Blog",
   },
   {
     path: "/",
@@ -54,8 +54,9 @@ const Navbar = () => {
   }, [viewSidebar]);
 
   return (
-    <nav className="bg-[#124547] text-white relative  z-10">
-      <main className={` ${open_sans.className} `}>
+    <nav className={` ${open_sans.className} bg-[#124547] text-white relative  z-10 `}>
+      <main>
+        {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<  >>>>>>>>>>>>>>>>>>>>>>>>>>> */}
         <section className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto ">
           {/* logo & contact div -------------------------------- */}
           <div className="flex justify-between items-center">
@@ -94,13 +95,13 @@ const Navbar = () => {
             </div>
           </div>
         </section>
-        {/* <<<<<<<<<<<<<<<<<<<<<<<<<<< NAVBAR FOR SMALL DEVICE >>>>>>>>>>>>>>>>>>>>>>>>>>> */}
+        {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<  >>>>>>>>>>>>>>>>>>>>>>>>>>> */}
         <section className=" bg-[#0c2c2d]">
           {/* ul li div  */}
           <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto flex md:gap-10 sm: gap-5 py-4 font-thin">
             {navli.map(({ path, name }, index) => (
               <ul key={index}>
-                  <li  className="flex items-center hover:text-[#ce9676] md:text-md sm: text-xs md:px-0 sm: px-2"> <Image
+                  <li  className="flex items-center hover:text-[#ce9676] md:text-lg sm: text-xs md:px-0 sm: px-2"> <Image
                   src={starLogo}
                   alt="star logo"
                   className="w-4"
@@ -119,7 +120,7 @@ const Navbar = () => {
       >
         {viewSidebar ? (
           <div className=" shadow-md h-screen z-10 transition ease-in duration-700 flex px-6 justify-center mt-10">
-            <div >
+            <div>
               {/* logo section  */}
               <div>
                 <Image src={mainLogo} alt="main logo" className=" w-48" />
