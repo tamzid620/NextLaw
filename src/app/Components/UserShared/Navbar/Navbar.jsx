@@ -98,7 +98,8 @@ const Navbar = () => {
         {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<  >>>>>>>>>>>>>>>>>>>>>>>>>>> */}
         <section className=" bg-[#0c2c2d]">
           {/* ul li div  */}
-          <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto flex md:gap-10 sm: gap-5 py-4 font-thin lg:justify-start md:justify-center sm: justify-center">
+          <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto  py-4 font-thin flex items-center md:justify-between sm: justify-center">
+            <div className="flex md:gap-10 sm: gap-5">
             {navli.map(({ path, name }, index) => (
               <ul key={index}>
                   <li  className="flex items-center hover:text-[#ce9676] md:text-lg sm: text-xs md:px-0 sm: px-2"> <Image
@@ -108,6 +109,12 @@ const Navbar = () => {
                 /> {name}</li>
               </ul>
             ))}
+            </div>
+            <div>
+            <button className="md:block sm: hidden uppercase text-sm font-semibold bg-white text-black hover:bg-[#238487] hover:text-white p-4">
+                  Free Evaluation
+                </button>
+            </div>
           </div>
         </section>
       </main>
