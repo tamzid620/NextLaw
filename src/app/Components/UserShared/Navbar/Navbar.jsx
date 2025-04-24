@@ -78,7 +78,7 @@ const Navbar = () => {
               <div className="border-r border-gray-400 pr-4 md:block sm: hidden">
                 <div className="flex justify-between items-center gap-3 mb-2">
                   <Image src={headphoneLogo} alt="main logo" className="w-8" />
-                  <h1 className=""> +880 135 698 4125</h1>
+                  <h1 className=""> +880-2-9612345</h1>
                 </div>
                 <div>
                   <p className="text-sm">Call Us For Free Consultation</p>
@@ -98,13 +98,13 @@ const Navbar = () => {
         {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<  >>>>>>>>>>>>>>>>>>>>>>>>>>> */}
         <section className=" bg-[#0c2c2d]">
           {/* ul li div  */}
-          <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto flex md:gap-10 sm: gap-5 py-4 font-thin">
+          <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto flex md:gap-10 sm: gap-5 py-4 font-thin lg:justify-start md:justify-center sm: justify-center">
             {navli.map(({ path, name }, index) => (
               <ul key={index}>
                   <li  className="flex items-center hover:text-[#ce9676] md:text-lg sm: text-xs md:px-0 sm: px-2"> <Image
                   src={starLogo}
                   alt="star logo"
-                  className="w-4"
+                  className="w-4 md:me-2"
                 /> {name}</li>
               </ul>
             ))}
@@ -126,7 +126,7 @@ const Navbar = () => {
                 <Image src={mainLogo} alt="main logo" className=" w-48" />
               </div>
               {/* social media link section  */}
-              <div className="text-center mt-10">
+              <div className="text-center mt-32">
                 <h1 className={` ${cormorant.className} text-2xl `}>
                   Follow Us
                 </h1>
@@ -137,7 +137,7 @@ const Navbar = () => {
                     className=" w-5"
                   />
                   <Image
-                    src={socialmedia2}
+                    src={socialmedia2} 
                     alt="social media logo"
                     className=" w-5"
                   />
